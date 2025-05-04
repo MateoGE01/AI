@@ -30,7 +30,7 @@ gemini_model = genai.GenerativeModel('gemini-1.5-flash') # Or another suitable m
 
 # --- Pydantic Models ---
 class TransactionData(BaseModel):
-    tipo: Literal["ingresos", "gastos", "transferencia"]
+    tipo: Literal["ingreso", "gasto", "transferencia"]
     monto: float
     cuentaId: int
     descripcion: Optional[str] = None
