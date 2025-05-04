@@ -242,6 +242,7 @@ async def process_document_endpoint(file: UploadFile = File(...)):
          print(f"Unexpected error during backend communication: {e}")
          return JSONResponse(status_code=500, content={"error": "Error inesperado durante la comunicación con el backend."})
     """
+    return validated_data # Return the validated data object
 @app.post("/process-text"
           , response_model=TransactionData,
           responses={
@@ -297,6 +298,7 @@ async def process_text_endpoint(input_data: TextInput):
          print(f"Unexpected error during backend communication: {e}")
          return JSONResponse(status_code=500, content={"error": "Error inesperado durante la comunicación con el backend."})
     """
+    return validated_data
 # --- Root endpoint for health check ---
 @app.get("/")
 def read_root():
