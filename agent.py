@@ -90,7 +90,7 @@ def extract_info_with_gemini(text: str) -> dict:
     Si no puedes determinar un campo requerido, incluye "null" como valor para ese campo en el JSON.
 
     Campos a extraer:
-    - tipo: (string) El tipo de transacción. Debe ser "ingresos", "gastos" o "transferencia". Infiere si no está explícito.
+    - tipo: (string) El tipo de transacción. Debe ser "ingreso", "gasto" o "transferencia". Infiere si no está explícito.
     - monto: (number) El monto total de la transacción. Debe ser un número positivo.
     - cuentaId: (number) El ID de la cuenta origen o principal. Infiere si es posible, si no usa 1 como default.
     - descripcion: (string, opcional) Una breve descripción de la transacción.
