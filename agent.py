@@ -11,8 +11,9 @@ from typing import Literal, Optional, List
 from dotenv import load_dotenv
 from PIL import Image
 import pytesseract
-from pdf2image import convert_from_bytes # Uncomment if using pdf2image
+from pdf2image import convert_from_bytes 
 
+#Mucho codigo
 # Load environment variables from .env file
 load_dotenv()
 
